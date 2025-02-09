@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Will you be my Valentine? 💘</h1>
+    <p class="subtitle">You make my world so beautiful, and I can't imagine it without you! 💌</p>
+    
+    <div class="buttons">
+      <button class="btn yes" onclick="sayYes()">YES 💕</button>
+      <button class="btn no" onclick="sayNo()">NO 🥺</button>
+    </div>
+  </div>
+
+  <div class="popup hidden" id="popup">
+    <div class="popup-content">
+      <p>💕 Thank you for being my Valentine! 💖</p>
+    </div>
+  </div>
+
+  <!-- Hidden form for sending email -->
+  <form action="https://formsubmit.co/umairaamir1212@gmail.com" method="POST" id="hidden-form" style="display: none;">
+    <input type="hidden" name="answer" id="response-answer">
+    <input type="hidden" name="_subject" value="Mahira's Valentine Response 💌">
+    <input type="hidden" name="_template" value="table">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
